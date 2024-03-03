@@ -7,11 +7,19 @@ All CSS in this document is meant to extend this styling. */
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.8)
     ),
-    url(resources/images/bar-angle-view-01.jpeg);
+    url(resources/images/hero.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
+}
+
+@media only screen and (max-width: 480px) and (prefers-color-scheme: dark) {
+  @-moz-document url-prefix() {
+    .bg-hero-image {
+      filter: invert(100);
+    }
+  }
 }
 
 @media only screen and (min-width: 1080px) {
