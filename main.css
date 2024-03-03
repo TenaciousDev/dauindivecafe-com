@@ -14,7 +14,7 @@ All CSS in this document is meant to extend this styling. */
   height: 50vh;
 }
 
-@media only screen and (prefers-color-scheme: dark) {
+@media only screen and (max-width: 480px) and (prefers-color-scheme: dark) {
   @-moz-document url-prefix() {
     .bg-hero-image {
       filter: invert(100);
