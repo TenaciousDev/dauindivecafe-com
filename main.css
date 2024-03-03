@@ -12,13 +12,12 @@ All CSS in this document is meant to extend this styling. */
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
-  forced-color-adjust: none;
 }
 
 @media only screen and (max-width: 480px) and (prefers-color-scheme: dark) {
   @-moz-document url-prefix() {
     .bg-hero-image {
-      filter: invert(100);
+      filter: invert(1);
     }
   }
 }
